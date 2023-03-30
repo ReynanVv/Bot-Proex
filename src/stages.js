@@ -1,7 +1,7 @@
 import {
     initialStage,
     stageOne,
-    stageTwo,
+    stagePro,
     finalStage,
 } from './stages/index.js';
 
@@ -17,8 +17,12 @@ export const stages = [
         stage: stageOne,
     },
     {
-        descricao: 'Description',
-        stage: stageTwo,
+        descricao: 'Programas e Projetos',
+        stage: stagePro,
+    },
+    {
+        descricao: 'Cursos e Eventos',
+        stage: stageCursos,
     },
     {
         descricao: 'Assistent',
