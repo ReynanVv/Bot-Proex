@@ -2,18 +2,19 @@ import {
     initialStage,
     stageOne,
     stagePro,
-    finalStage,
+    stageCursos,
+    CondicaoTerminar,
 } from './stages/index.js';
 
 import { storage } from './storage.js';
 
 export const stages = [
     {
-        descricao: 'Welcome',
+        descricao: 'Menu',
         stage: initialStage,
     },
     {
-        descricao: 'Menu',
+        descricao: 'Menu das Opções',
         stage: stageOne,
     },
     {
@@ -25,8 +26,8 @@ export const stages = [
         stage: stageCursos,
     },
     {
-        descricao: 'Assistent',
-        stage: finalStage,
+        descricao: 'Condicao para Terminar',
+        stage: CondicaoTerminar,
     },
 ];
 
@@ -35,7 +36,7 @@ export function getStage({ from }) {
         return storage[from].stage;
     }
     storage[from] = {
-        stage: 0,
+        stage: 0
     };
     return storage[from].stage;
 }
