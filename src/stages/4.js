@@ -13,7 +13,7 @@ export const CondicaoTerminar = {
         if (message !== '1' || message !== '2') {
             let msg = "Opção inválida, tente novamente"
             storage[from].stage = 4
-            console.log("Voltando para CondicaoTerminar")
+            console.log("\n----- Voltando para CondicaoTerminar -----\n")
             return msg
          }
     },

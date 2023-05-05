@@ -14,11 +14,11 @@ create({
     
     
 function start(client) {
-    console.log("Conectou")
+    console.log("\n----- Conectou -----\n")
     client.onMessage((message) => {
-        if (!message.isGroupMsg) {
-            console.log(message.from)
-            console.log("entrou no if")
+        if (message) {
+            console.log('\n-----'+message.from+'-----\n')
+            console.log("\n----- Entrou no if -----\n")
             const currentStage = getStage({ from: message.from });
             const messageResponse = stages[currentStage].stage.exec({
                 from: message.from,
@@ -28,7 +28,7 @@ function start(client) {
 
             if (messageResponse) {
                 client.sendText(message.from, messageResponse).then(() => {
-                    console.log('Mensagem enviada.');
+                    console.log('\nMensagem enviada.\n');
                 }).catch(error => console.error('Error when sending message', error));
             }
         }

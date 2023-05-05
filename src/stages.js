@@ -4,6 +4,8 @@ import {
     stagePro,
     stageCursos,
     CondicaoTerminar,
+    CondicaoFinanciamento,
+    CondicaoDeInicio,
 } from './stages/index.js';
 
 import { storage } from './storage.js';
@@ -29,6 +31,14 @@ export const stages = [
         descricao: 'Condicao para Terminar',
         stage: CondicaoTerminar,
     },
+    {
+        descricao: 'Condicao para Financiamento',
+        stage: CondicaoFinanciamento,
+    },
+    {
+        descricao: 'Condicao de Inicio',
+        stage: CondicaoDeInicio,
+    },
 ];
 
 export function getStage({ from }) {
@@ -36,7 +46,8 @@ export function getStage({ from }) {
         return storage[from].stage;
     }
     storage[from] = {
-        stage: 0
+        stage: 6
     };
+    console.log("\n----- Na Condição de inicio -----\n")
     return storage[from].stage;
 }

@@ -1,8 +1,3 @@
-2023/05/04-16:04:14.866 3403 Reusing MANIFEST /Users/reynanvieira/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Local Storage/leveldb/MANIFEST-000001
-2023/05/04-16:04:14.868 3403 Recovering log #3
-2023/05/04-16:04:14.869 3403 Level-0 table #3: started
-2023/05/04-16:04:14.884 3403 Level-0 table #3: 16528 bytes OK
-2023/05/04-16:04:14.885 3403 Recovering log #4
-2023/05/04-16:04:14.886 3403 Reusing old log /Users/reynanvieira/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Local Storage/leveldb/000004.log 
-2023/05/04-16:04:14.923 3403 Delete type=0 #3
-2023/05/04-16:04:14.923 3403 Delete type=2 #5
+2023/05/05-16:09:04.411 4d03 Reusing MANIFEST /Users/reynanvieira/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Local Storage/leveldb/MANIFEST-000001
+2023/05/05-16:09:04.414 4d03 Recovering log #6
+2023/05/05-16:09:04.415 4d03 Reusing old log /Users/reynanvieira/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Local Storage/leveldb/000006.log 
