@@ -12,10 +12,10 @@ const connection = mysql.createConnection({
   port: process.env.MYSQL_PORT
 });
 
-connection.connect((err) => {
-    if (err) {
-      console.error("CONNECT FAILED", err.code);
-    } else console.log("CONNECTED");
-  });
+// Exemplo de consulta ao banco de dados
+connection.query('SELECT * FROM mensagens_bot', (error, results) => {
+  if (error) throw error;
+  console.log('Resultado:', results);
+});
   
-  module.exports = { connection };
+module.exports = { connection };
