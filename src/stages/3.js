@@ -31,14 +31,14 @@ export const stageCursos = {
         if (message === 'd') {
             let msg = 'Programa Proex Comunidade\n\n';
             msg += 'Para Informações sobre o programa Proex Comunidade, *acesse*: https://proex.ufra.edu.br/index.php?option=com_content&view=article&id=329&Itemid=424'
-            msg += '\nPara ir ao site da proex, *acesse*: https://proex.ufra.edu.br/\n\n';
+            msg += '\nPara ir ao site da proex, *acesse*: https://proex.ufra.edu.br/ \n\n';
             storage[from].stage = 0;
 
             return msg;
         }
 
         if (message !== 'a'|| message !== 'b'|| message !== 'c'|| message !=='d') {
-            let msg = '❌ *Opção inválida, digite novamente!* \n\n';
+            let msg = '*Opção inválida, digite novamente!*\n\n';
             storage[from].stage = 3;
             return msg;
             

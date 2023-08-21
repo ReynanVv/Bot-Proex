@@ -60,7 +60,7 @@ export const stagePro = {
         }
 
         if (message !== 'a'|| message !== 'b'|| message !== 'c'|| message !=='d') {
-            let msg = '❌ *Opção inválida, digite novamente!* \n\n';
+            let msg = '*Opção inválida, digite novamente!* \n\n';
             storage[from].stage = 2;
             return msg;
             

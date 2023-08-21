@@ -1,6 +1,5 @@
 import { create } from 'venom-bot';
 import { stages, getStage } from './stages.js';
-import { connection } from './conexao.cjs';
 
 create({
     session: 'store',
@@ -35,9 +34,3 @@ function start(client) {
         }
     });
 };
-
-// Exemplo de consulta ao banco de dados
-connection.query('SELECT * FROM mensagens_bot', (error, results) => {
-    if (error) throw error;
-    console.log('Resultado:', results);
-  });

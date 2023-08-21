@@ -1,3 +1,3 @@
-2023/08/21-15:44:10.435 14a03 Reusing MANIFEST /Users/user/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Sync Data/LevelDB/MANIFEST-000001
-2023/08/21-15:44:10.440 14a03 Recovering log #3
-2023/08/21-15:44:10.444 14a03 Reusing old log /Users/user/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Sync Data/LevelDB/000003.log 
+2023/08/21-16:30:42.906 15103 Reusing MANIFEST /Users/user/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Sync Data/LevelDB/MANIFEST-000001
+2023/08/21-16:30:42.907 15103 Recovering log #3
+2023/08/21-16:30:42.907 15103 Reusing old log /Users/user/Documents/GitHub/Bot-JS-Venom/tokens/store/Default/Sync Data/LevelDB/000003.log 
