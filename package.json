@@ -5,10 +5,13 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "node src/server.js"
+    "dev": "node src/server.js",
+    "start": "node src/conexao.js"
   },
   "dependencies": {
+    "dotenv": "^16.3.1",
     "i": "^0.3.7",
+    "mysql2": "^3.6.0",
     "venom-bot": "^4.3.7"
   }
 }
