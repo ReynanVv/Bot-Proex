@@ -1,5 +1,16 @@
 import { create } from 'venom-bot';
 import { stages, getStage } from './stages.js';
+import { criarConexao } from './conexao.js';
+
+const con = criarConexao();
+con.connect((err) => {
+    if (err) {
+        console.log('Erro connecting to database...', err)
+        return
+    }
+    console.log('Connection established!')
+})
+export { con };
 
 create({
     session: 'store',

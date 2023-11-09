@@ -6,12 +6,19 @@
   "license": "MIT",
   "scripts": {
     "dev": "node src/server.js",
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "db": "node src/db.cjs"
   },
   "dependencies": {
     "dotenv": "^16.3.1",
     "i": "^0.3.7",
+    "mysql": "^2.18.1",
     "mysql2": "^3.6.0",
     "venom-bot": "^4.3.7"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-execute": "^0.2.2"
   }
 }
